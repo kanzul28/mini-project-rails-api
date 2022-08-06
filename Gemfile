@@ -17,6 +17,7 @@ gem 'puma', '~> 5.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'active_model_serializers', '~> 0.10.0'
 
+gem 'will_paginate', '~> 3.1.0'
 
 gem 'pg'
 # Use Active Storage variant
