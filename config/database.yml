@@ -13,7 +13,7 @@ default: &default
 development:
   adapter: postgresql
   encoding: unicode
-  database: todos-api
+  database: mini-project
   host: 127.0.0.1
   pool: 5
   username: rakamin
@@ -21,7 +21,7 @@ development:
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: app_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -33,11 +33,11 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: todos-api_production
+  database: mini-project_production
   host: localhost
   pool: 5
   username: rakamin
-  password: <%= ENV['todos-api_Password'] %>
+  password: <%= ENV['mini-project_Password'] %>
   role: MyRole
 
 production:
