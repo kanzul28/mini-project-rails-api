@@ -9,6 +9,16 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: todos-api
+  host: 127.0.0.1
+  pool: 5
+  username: rakamin
+  password: admin
+
 development:
   <<: *default
   database: db/development.sqlite3
@@ -19,6 +29,16 @@ development:
 test:
   <<: *default
   database: db/test.sqlite3
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: todos-api_production
+  host: localhost
+  pool: 5
+  username: rakamin
+  password: <%= ENV['todos-api_Password'] %>
+  role: MyRole
 
 production:
   <<: *default
