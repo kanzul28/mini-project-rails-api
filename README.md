@@ -37,15 +37,9 @@ to run the test you can run by command below. (actually I prefer to use format d
 rspec -fd
 ```
 
-## Schema Design
-
-![alt text](https://github.com/rachfiandj07/gigih-social-media-backend/blob/main/assets/social-media-db-schema-design%20(1)%20(1).png)
 
 ## API Documentation
 
 For this project, Postman Collection was used to test the API Endpoint
 - Go check this link [here !](https://documenter.getpostman.com/view/21426193/VUjMnk9E)
 
-## Production URL
-
-You can access here the production on [Production Link](http://34.92.229.122:4567/)
