@@ -1,24 +1,51 @@
-# README
+# mini-project-rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+PROJECT CREATE TODO API
+### Introduction
 
-Things you may want to cover:
+Creating a restful Todo List API where users can manage their to-do lists and todo items with ruby on rails, using TDD to implement the API, adding token-based authentication with JWT, versioning the API, serializing with active model serializers, and adding pagination features.
 
-* Ruby version
+## Project Scope
 
-* System dependencies
+[SPEC.MD](https://github.com/rachfiandj07/gigih-social-media-backend/blob/main/spec.md)
 
-* Configuration
 
-* Database creation
+## Prerequisite to run application locally
 
-* Database initialization
+To run this app you need to install some dependencies below:
+* install Ruby, for developing this app I use ruby 3.0.3
+* install Ruby on Rails
+```sh
+gem install rails
+```
+* clone this repo and run this command to install dependencies that app needed
+```sh
+bundle install
+```
+* run this command to start the app
+```sh
+rails s
+```
 
-* How to run the test suite
+## Test
+for testing I use rspec. Please make sure you already installed it.
+```sh
+gem install rspec
+```
+to run the test you can run by command below. (actually I prefer to use format document in rspec)
+```sh
+rspec -fd
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Schema Design
 
-* Deployment instructions
+![alt text](https://github.com/rachfiandj07/gigih-social-media-backend/blob/main/assets/social-media-db-schema-design%20(1)%20(1).png)
 
-* ...
+## API Documentation
+
+For this project, Postman Collection was used to test the API Endpoint
+- Go check this link [here !](https://documenter.getpostman.com/view/21426193/VUjMnk9E)
+
+## Production URL
+
+You can access here the production on [Production Link](http://34.92.229.122:4567/)
